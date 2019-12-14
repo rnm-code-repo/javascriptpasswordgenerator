@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+    <!-- JS dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js">  
+    </script> 
+    <script src="script.js"></script>
+    <title>PWD-generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Password generator</h1>
+        <div class="container2">
+            <h2>Generate Password</h2>
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea3"></label>
+                <textarea disabled class="form-control" id="exampleFormControlTextarea3" rows="6"
+                    border-style:dashed>your secure password</textarea>
+            </div>
+
+            <br>
+
+            <button type="button" class="btn btn-primary btn-lg" onclick="javascript:getPwd();">Generate
+                password</button>
+            <button type="button" class="btn btn-secondary btn-lg" justify-content-end 
+            onclick="javascript:copyPwd();return;">Copy to clipboard</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
